@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
+import {useStateValue} from '../../State/stateprovider.component';
+import {actionTypes} from '../../State/reducer.component';
 
+export function Searchbox() {
 
-export const Searchbox = () => {
- 
+ const [,dispatch] = useStateValue();
  const [input,setInput] = useState('')
  const history = useHistory();
 
@@ -12,7 +14,11 @@ export const Searchbox = () => {
  }
 function handleSubmit(e){
     e.preventDefault();
-    console.log(`You have searched for ${input}`)
+    console.log(`You have searched for ${input}`);
+    dispatch({
+        type: actionTypes.SET_SEARCH_TERM,
+        term: input,
+    });
     history.push('/search')
 }
 

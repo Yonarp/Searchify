@@ -1,5 +1,6 @@
 import React from 'react';
-import {Searchbox} from './Components/searchbox/searchbox.component.jsx';
+import Home from './Pages/Home/home.component.jsx';
+import SearchPage from './Pages/SearchPage/searchpage.component.jsx';
 import {Route,Switch} from 'react-router-dom';
 import './App.css';
 
@@ -8,10 +9,10 @@ function App() {
     <div className="App">
       <Switch>
       <Route exact = {true} path ='/'>
-      <Searchbox/>
+      <Home/>
       </Route>
       <Route  path = '/search'>
-        <h1>This is the search page</h1>
+        <SearchPage/>
       </Route>
       </Switch>
 
