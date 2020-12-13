@@ -2,8 +2,9 @@ import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
 import {useStateValue} from '../../State/stateprovider.component';
 import {actionTypes} from '../../State/reducer.component';
+import './searchbox.styles.scss';
 
-export function Searchbox() {
+export function Searchbox({cssClassName}) {
 
  const [,dispatch] = useStateValue();
  const [input,setInput] = useState('')
@@ -29,8 +30,11 @@ function handleSubmit(e){
 
  
  return(
-    <form onSubmit= {handleSubmit}>
-        <input type='search' value={input} onChange={handleChange}></input>
-        <button type='submit'>Click on me to submit</button>
+     <div className='search-components'>
+    <form onSubmit= {handleSubmit} className={cssClassName}>
+        <input className='search-bar' type='search' value={input} onChange={handleChange} placeholder='Search Or Type A URL'></input>
+        <button className='search-button' type='submit'>Click on me to submit</button>
+        <p>Find What You Are Looking For</p>
     </form>
+    </div>
  )}

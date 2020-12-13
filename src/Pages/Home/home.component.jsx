@@ -4,7 +4,7 @@ import './home.styles.scss';
 
 const Home = () => (
     <div className="home">
-    <Searchbox/>
+    <Searchbox cssClassName='search-form'/>
     </div>
 
 )

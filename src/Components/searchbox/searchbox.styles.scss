@@ -1,0 +1,32 @@
+.search{
+
+    &-components{
+        width: 100%;
+    }
+
+    &-form{
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        input{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+            padding: 2rem 2rem;
+        }
+    }
+    &-bar{
+        outline: none;
+        border-radius: 2rem;
+        border: none;
+        background: rgb(230, 219, 219);
+        box-shadow: inset .4rem .4rem .4rem rgba($color: #000000, $alpha: .1),inset -.4rem -.4rem 1rem rgba(255, 255, 255, 0.4);
+    }
+    &-button{
+        color: red;
+    }
+}
