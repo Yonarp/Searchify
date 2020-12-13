@@ -11,15 +11,21 @@ export function Searchbox() {
 
  function handleChange(e){
     setInput(e.target.value);
+    
  }
 function handleSubmit(e){
     e.preventDefault();
-    console.log(`You have searched for ${input}`);
-    dispatch({
-        type: actionTypes.SET_SEARCH_TERM,
-        term: input,
-    });
-    history.push('/search')
+    if(input)
+    {
+        console.log(`You have searched for ${input}`);
+        dispatch({
+            type: actionTypes.SET_SEARCH_TERM,
+            term: input,
+        });
+        history.push('/search')
+        
+    }
+    else alert('please fill something in the text field');
 }
 
  

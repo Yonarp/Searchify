@@ -6,7 +6,7 @@ const useGoogleSearch = (term) =>{
 
     useEffect(() => {
         const fetchData = async () => {
-        fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`)
+        fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}&lowRange=20&num=2`)
         .then(response => response.json())
         .then(result => {
             setData(result);
