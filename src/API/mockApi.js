@@ -1,4 +1,4 @@
-import response from './response';
+ import response from './response';
 
 /**
  * Mimics async thread sleep for given milliseconds

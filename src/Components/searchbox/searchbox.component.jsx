@@ -10,8 +10,7 @@ export function Searchbox() {
  const history = useHistory();
 
  function handleChange(e){
-    setInput(e.target.value);
-    
+    setInput(e.target.value);  
  }
 function handleSubmit(e){
     e.preventDefault();

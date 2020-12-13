@@ -17,6 +17,21 @@ export const reducer = (state,action) => {
                 ...state,
                 term: action.term,
             };
+        case actionTypes.GO_PREV_PAGE: 
+        if(state.offset > 1)
+        return{
+            ...state,
+            offset: state.offset - 10,
+        }
+         return state;
+
+        case actionTypes.GO_NEXT_PAGE: 
+         if(state.offset < 91)
+         return{
+             ...state,
+             offset: state.offset + 10,
+         }
+          return state
 
         default: return state;
     }
