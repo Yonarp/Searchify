@@ -1,5 +1,6 @@
 @import '../../Components/variables.styles.scss';
 @import '../../font/stylesheet.css';
+@import "~fontsource-raleway/300.css";
 
 
 .home {
@@ -8,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     
     h1 {
         color: $text-yellow;
@@ -16,10 +17,24 @@
         font-size: 15rem;
         font-weight: 100;
     }
+    h2{
+        margin-top: 3rem;
+        color: $text-white;
+        font-size: 2.3rem;
+        letter-spacing: .7rem;
+        font-family: 'Raleway';
+        text-transform: capitalize;
+        font-weight: 100;
+
+    }
+
+ 
 }
 
 .logo{
+    position: absolute;
     display: flex;
     font-display: row;
     position: relative;
+    margin-bottom: 10rem;
 }

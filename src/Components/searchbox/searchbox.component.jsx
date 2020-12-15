@@ -46,7 +46,7 @@ function handleSubmit(e){
                
 
             }}  placeholder='Search Or Type A URL'/>
-        <button className='search-button' type='submit' >-></button>
+        <button className='search-button' type='submit' >&rarr;</button>
         </div>
     </form>
     </div>

@@ -5109,10 +5109,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
-fontsource-lobster@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-lobster/-/fontsource-lobster-3.1.5.tgz#2d101ebd3d756624b5054351b55ed2c5c5744f45"
-  integrity sha512-9h4lpBCCEGiJMloTaz+FA6k55uUjZYXsEqSJ6TmNnWRUcrbvkCaZt6aagc1hznz2+vLUtYfXlxpfm4WHdg8Rng==
+fontsource-raleway@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.1.6.tgz#a8d313f386c16b5911c8ea5aa8c203e937c2432e"
+  integrity sha512-tuQRSvb/iTTEswaXXRctMru2mXn7SDOAP9SNEVlB3HgPKNsZH24eMrWbakYTX67KW8mI5CcEEH3dlGhbsvxD7g==
 
 for-in@^1.0.2:
   version "1.0.2"

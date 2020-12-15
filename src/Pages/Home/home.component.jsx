@@ -24,6 +24,7 @@ const Home = () => {
     <Lottie lottieRef={lottieRef} animationData={animationData} style={style} loop={false} autoplay={false} />
     </div>
     <Searchbox cssClassName='search-form' reference={lottieRef}/>
+    <h2>find what you are looking for</h2>
     </div>
     )
 
