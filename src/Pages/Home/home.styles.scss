@@ -1,7 +1,25 @@
-.home{
+@import '../../Components/variables.styles.scss';
+@import '../../font/stylesheet.css';
+
+
+.home {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    h1 {
+        color: $text-yellow;
+        font-family: 'Whestley';
+        font-size: 15rem;
+        font-weight: 100;
+    }
+}
+
+.logo{
+    display: flex;
+    font-display: row;
+    position: relative;
 }

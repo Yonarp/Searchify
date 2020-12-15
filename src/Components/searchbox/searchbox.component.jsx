@@ -2,13 +2,15 @@ import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
 import {useStateValue} from '../../State/stateprovider.component';
 import {actionTypes} from '../../State/reducer.component';
+
 import './searchbox.styles.scss';
 
-export function Searchbox({cssClassName}) {
+export function Searchbox({cssClassName, reference}) {
 
  const [,dispatch] = useStateValue();
- const [input,setInput] = useState('')
+ const [input,setInput] = useState('');
  const history = useHistory();
+
 
  function handleChange(e){
     setInput(e.target.value);  
@@ -31,12 +33,21 @@ function handleSubmit(e){
  
  return(
      <div className='search-components'>
-    <form onSubmit= {handleSubmit} className={cssClassName}>
-        <div className="search-bar">
-            <input className='search-bar-input' type='search' value={input} onChange={handleChange} placeholder='Search Or Type A URL'/>
+
+    <form onSubmit= {handleSubmit} className={cssClassName}  >
+        <div className="search-bar">    
+            <input className='search-bar-input' type='search' value={input} onChange={handleChange} onFocus={() => {
+                 reference.current.setDirection(1)
+                 reference.current.play();
+            }} onBlur = {async () => {
+                 reference.current.setDirection(-1)
+                 reference.current.play();
+                  
+               
+
+            }}  placeholder='Search Or Type A URL'/>
+        <button className='search-button' type='submit' >-></button>
         </div>
-        <button className='search-button' type='submit'>Click on me to submit</button>
-        <p>Find What You Are Looking For</p>
     </form>
     </div>
  )}
