@@ -32,9 +32,35 @@
 }
 
 .logo{
+    overflow: hidden;
+    height: auto;
+    width: auto;
     position: absolute;
     display: flex;
     font-display: row;
     position: relative;
     margin-bottom: 10rem;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200%;
+        width: 200%;
+        background: $background-black;
+        animation: logo-reveal 2s linear .3s forwards;
+    }
+}
+
+@keyframes logo-reveal {
+    from{
+        opacity: 1;
+        left: 0;
+    }
+
+    to{
+        opacity: 0;
+        left: 100%;
+    }
 }
