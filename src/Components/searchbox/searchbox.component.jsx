@@ -32,7 +32,9 @@ function handleSubmit(e){
  return(
      <div className='search-components'>
     <form onSubmit= {handleSubmit} className={cssClassName}>
-        <input className='search-bar' type='search' value={input} onChange={handleChange} placeholder='Search Or Type A URL'></input>
+        <div className="search-bar">
+            <input className='search-bar-input' type='search' value={input} onChange={handleChange} placeholder='Search Or Type A URL'/>
+        </div>
         <button className='search-button' type='submit'>Click on me to submit</button>
         <p>Find What You Are Looking For</p>
     </form>
