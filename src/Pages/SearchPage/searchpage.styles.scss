@@ -4,7 +4,7 @@
 .search-page {
     width: 95%;
     margin: 0 auto;
-    h1{
+    &-logo{
         font-family: 'Whestley';
         color: $text-yellow;
         font-weight: 100;

@@ -27,7 +27,7 @@ const [data, setData] = useState([]);
 
  return(
     <div className='search-page'>
-        <h1>Searchify</h1>
+        <h1 className='search-page-logo'>Searchify</h1>
         <Searchbox reference={null} cssClassName='search-page-bar'/>
         <p>total searches {data?.searchInformation?.formattedTotalResults} in {data?.searchInformation?.formattedSearchTime} seconds</p>
 
