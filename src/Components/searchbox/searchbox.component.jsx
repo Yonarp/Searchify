@@ -37,12 +37,18 @@ function handleSubmit(e){
     <form onSubmit= {handleSubmit} className={cssClassName}  >
         <div className="search-bar">    
             <input className='search-bar-input' type='search' value={input} onChange={handleChange} onFocus={() => {
+                 if(reference !== null)
+                 {
                  reference.current.setDirection(1)
                  reference.current.play();
-            }} onBlur = {async () => {
+                 }
+                 else return;
+            }} onBlur = { () => {
+                if(reference !== null){
                  reference.current.setDirection(-1)
                  reference.current.play();
-                  
+                }
+                else return;
                
 
             }}  placeholder='Search Or Type A URL'/>

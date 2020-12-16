@@ -1,0 +1,13 @@
+@import '../../Components/variables.styles.scss';
+@import '../../font/stylesheet.css';
+
+.search-page {
+    width: 95%;
+    margin: 0 auto;
+    h1{
+        font-family: 'Whestley';
+        color: $text-yellow;
+        font-weight: 100;
+        font-size: 10rem;
+    }
+}

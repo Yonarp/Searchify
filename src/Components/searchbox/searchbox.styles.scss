@@ -24,6 +24,15 @@
         }
 
     }
+    &-page-bar{
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+
+        div{
+            padding: 1.5rem 2rem;
+        }
+    }
     &-bar{
         overflow: hidden;
         height: auto;
