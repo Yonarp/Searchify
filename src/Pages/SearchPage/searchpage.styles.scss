@@ -4,10 +4,16 @@
 .search-page {
     width: 95%;
     margin: 0 auto;
+    &-link{text-decoration: none;}
     &-logo{
         font-family: 'Whestley';
         color: $text-yellow;
         font-weight: 100;
         font-size: 10rem;
+    }
+    &-para{
+        font-family: Arial, Helvetica, sans-serif;
+        color: $text-yellow;
+        font-size: 2rem;
     }
 }
