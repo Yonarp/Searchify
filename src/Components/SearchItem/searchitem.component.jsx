@@ -7,7 +7,7 @@ const SearchItem = ({item, idx}) => {
     if(thumbnail?.length){
         thumbnailSrc = thumbnail[0]?.src;    
     } */
-    const delay = idx * 100;
+    const delay = idx * 200;
 
     return(
         <div className="item" style={{animationDelay: `${delay}ms`}}>
