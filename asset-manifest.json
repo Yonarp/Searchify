@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Searchify/static/css/main.4d603f33.chunk.css",
+    "main.js": "/Searchify/static/js/main.ff784353.chunk.js",
+    "main.js.map": "/Searchify/static/js/main.ff784353.chunk.js.map",
+    "runtime-main.js": "/Searchify/static/js/runtime-main.a9800d67.js",
+    "runtime-main.js.map": "/Searchify/static/js/runtime-main.a9800d67.js.map",
+    "static/css/2.122b55c9.chunk.css": "/Searchify/static/css/2.122b55c9.chunk.css",
+    "static/js/2.95c0f856.chunk.js": "/Searchify/static/js/2.95c0f856.chunk.js",
+    "static/js/2.95c0f856.chunk.js.map": "/Searchify/static/js/2.95c0f856.chunk.js.map",
+    "index.html": "/Searchify/index.html",
+    "static/css/2.122b55c9.chunk.css.map": "/Searchify/static/css/2.122b55c9.chunk.css.map",
+    "static/css/main.4d603f33.chunk.css.map": "/Searchify/static/css/main.4d603f33.chunk.css.map",
+    "static/js/2.95c0f856.chunk.js.LICENSE.txt": "/Searchify/static/js/2.95c0f856.chunk.js.LICENSE.txt",
+    "static/media/searchpage.styles.scss": "/Searchify/static/media/Whestleycaps.e7006367.woff2",
+    "static/media/searchitem.styles.scss": "/Searchify/static/media/raleway-vietnamese-300-normal.41f91bf2.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9800d67.js",
+    "static/css/2.122b55c9.chunk.css",
+    "static/js/2.95c0f856.chunk.js",
+    "static/css/main.4d603f33.chunk.css",
+    "static/js/main.ff784353.chunk.js"
+  ]
+}
